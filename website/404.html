@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Setting a custom font for a more modern look */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 flex items-center justify-center min-h-screen">
+    <!-- Main container for the 404 page content -->
+    <div
+      class="max-w-md w-full bg-white p-8 md:p-12 rounded-2xl shadow-xl text-center border border-gray-200"
+    >
+      <!-- The large 404 heading -->
+      <h1 class="text-6xl md:text-8xl font-extrabold text-slate-800">404</h1>
+
+      <!-- A friendly message explaining the error -->
+      <p class="text-xl md:text-2xl mt-4 font-semibold text-slate-600">
+        Page Not Found
+      </p>
+      <p class="mt-4 text-base text-slate-500 leading-relaxed">
+        Oops! The page you are looking for might have been removed, had its name
+        changed, or is temporarily unavailable.
+      </p>
+
+      <!-- A call-to-action button to navigate back to the home page -->
+      <a
+        href="./index.html"
+        class="mt-8 inline-block px-8 py-3 bg-slate-800 text-white font-bold text-lg rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+      >
+        Go Home
+      </a>
+    </div>
+  </body>
+</html>

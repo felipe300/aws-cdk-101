@@ -1,3 +1,59 @@
+/* Basic body styling for a dark theme */
 body {
-  background: gainsboro;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Styling for the main heading with a neon glow effect */
+h1 {
+  font-size: 4rem;
+  color: #39ff14; /* Neon green color */
+  text-shadow:
+    0 0 7px #39ff14,
+    0 0 10px #39ff14,
+    0 0 21px #39ff14,
+    0 0 42px #39ff14,
+    0 0 82px #39ff14,
+    0 0 92px #39ff14,
+    0 0 102px #39ff14,
+    0 0 151px #39ff14;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing animation */
+@keyframes neon-glow {
+  from {
+    text-shadow:
+      0 0 5px #39ff14,
+      0 0 10px #39ff14,
+      0 0 15px #39ff14,
+      0 0 20px #39ff14,
+      0 0 35px #39ff14,
+      0 0 40px #39ff14,
+      0 0 50px #39ff14;
+  }
+  to {
+    text-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #39ff14,
+      0 0 30px #39ff14,
+      0 0 40px #39ff14,
+      0 0 60px #39ff14,
+      0 0 70px #39ff14,
+      0 0 80px #39ff14;
+  }
+}
+
+/* Styling for the paragraphs */
+p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 5px;
 }
